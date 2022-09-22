@@ -1,19 +1,63 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Pages
+import DiscoverPage from "./Pages/DiscoverPage";
+import HomePage from "./Pages/HomePage";
+import ConsultPage from "./Pages/ConsultPage";
+import SpacesPage from "./Pages/SpacesPage";
+import MyRoutinePage from "./Pages/MyRoutinePage";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Components
+import RouterWrapper from "./Components/RouterWrapper";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <RouterWrapper>
+        <HomePage />
+      </RouterWrapper>
+    ),
+  },
+  {
+    path: "discover",
+    element: (
+      <RouterWrapper>
+        <DiscoverPage />
+      </RouterWrapper>
+    ),
+  },
+  {
+    path: "consult",
+    element: (
+      <RouterWrapper>
+        <ConsultPage />
+      </RouterWrapper>
+    ),
+  },
+  {
+    path: "spaces",
+    element: (
+      <RouterWrapper>
+        <SpacesPage />
+      </RouterWrapper>
+    ),
+  },
+  {
+    path: "myRoutine",
+    element: (
+      <RouterWrapper>
+        <MyRoutinePage />
+      </RouterWrapper>
+    ),
+  },
+]);
+
+createRoot(document.getElementById("root") as HTMLElement).render(
+  <RouterProvider router={router} />
+);
