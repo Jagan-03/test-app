@@ -19,7 +19,7 @@ const TodaysRoutine: React.FC<TodaysRoutineProps> = () => {
         {TodaysRoutineData.map((data) => (
           <button className="col-span-3 lg:col-span-1 md:col-span-3 sm:col-span-3 rounded-xl bg-warmGrey h-24 relative" key={data.id} onClick={() => setActiveTabIndex(data.id)}>
             <div className="flex h-full">
-              <div className="flex-0.3 relative flex justify-center">
+              <div className="flex-0.4 relative flex justify-center">
                 <img
                   src={data.img}
                   alt={data.workout}
@@ -29,8 +29,8 @@ const TodaysRoutine: React.FC<TodaysRoutineProps> = () => {
                   <span className="text-xs text-white">{data.timing}</span>
                 </div>
               </div>
-              <div className="flex-0.7 flex flex-col items-start justify-between p-3 h-full">
-                <span className={`text-base text-start ${data.id === activeTabIndex ? "text-purple400" : "text-white"} w-40`}>
+              <div className="flex-0.6 flex flex-col items-start justify-between p-3 h-full w-40">
+                <span className={`text-base text-start ${data.id === activeTabIndex ? "text-purple400" : "text-white"}`}>
                   {data.workout}
                 </span>
                 <span className="text-xs text-warmGrey400">
