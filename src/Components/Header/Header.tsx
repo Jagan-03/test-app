@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = () => {
     }
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-black fixed top-0 w-screen">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">

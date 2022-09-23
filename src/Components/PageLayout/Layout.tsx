@@ -9,8 +9,8 @@ export interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div className="bg-black h-screen relative">
-            <Header />
             {children}
+            <Header />
             <NavBar />
         </div>
     )

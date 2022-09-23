@@ -8,7 +8,7 @@ const NavBar: React.FC<NavBarProps> = () => {
     const { pathname } = useLocation();
 
   return (
-    <nav className="bg-warmGrey absolute w-screen bottom-0">
+    <nav className="bg-warmGrey fixed w-screen bottom-0">
       <div className="mx-auto max-w-2xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-center">
           {NavbarIcons.map((icon) => (
