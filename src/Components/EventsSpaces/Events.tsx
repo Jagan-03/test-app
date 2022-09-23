@@ -14,7 +14,7 @@ const Events: React.FC<EventsProps> = () => {
       <div className="grid grid-cols-4 gap-3 mt-5">
         {
             EventsData.map(event => (
-                <EventCard {...event}/>
+                <EventCard key={event.id} {...event}/>
             ))
         }
       </div>

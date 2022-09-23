@@ -11,7 +11,7 @@ const TodaysRoutine: React.FC<TodaysRoutineProps> = () => {
     <div className="mx-auto mt-10 max-w-5xl rounded">
       <div className="flex pl-2 pr-2 justify-between">
         <span className="text-base text-gray-400 font-bold">Today</span>
-        <a href="#">
+        <a href="/">
           <span className="text-sm text-gray-400">View All</span>
         </a>
       </div>

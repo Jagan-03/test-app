@@ -1,4 +1,3 @@
-import { MdOutlineWaterDrop } from "react-icons/md";
 import GoalsData from "./GoalsData";
 
 interface GoalsProps {}
@@ -10,7 +9,7 @@ const Goals: React.FC<GoalsProps> = () => {
     <div className="mx-auto mt-10 max-w-5xl rounded">
       <div className="flex pl-2 pr-2 justify-between">
         <span className="text-base text-gray-400 font-bold">Goals</span>
-        <a href="#">
+        <a href="/">
           <span className="text-sm text-gray-400">View All</span>
         </a>
       </div>

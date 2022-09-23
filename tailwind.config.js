@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         warmGrey: '#1C1917',
         warmGrey700: '#44403C',
+        warmGrey600: '#292524',
         warmGrey400: '#A8A29E',
         purple400: '#C084FC',
       }
