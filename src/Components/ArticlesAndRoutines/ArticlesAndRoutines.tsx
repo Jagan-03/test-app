@@ -8,7 +8,7 @@ const ArticlesAndRoutines: React.FC<ArticlesAndRoutineProps> = () => {
       <div className="flex pl-5 pr-5 justify-between">
         <span className="text-base text-gray-400 font-bold">Exercises</span>
         <a href="#">
-          <span className="text-sm text-gray-400">View All</span>
+          <span className="text-sm text-gray-400">View more</span>
         </a>
       </div>
       <div className="grid grid-cols-4 gap-4 mt-5 pl-3 pr-3">
